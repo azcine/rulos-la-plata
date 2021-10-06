@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,100&family=Montserrat:wght@300&family=Ubuntu:wght@300&display=swap');
+
+/*
+font-family: 'Fira Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+:root {
+    --fuentes-generales: 'Montserrat', sans-serif;
+    --fuente-botones: 'Ubuntu', sans-serif;
+    --fuente-color-titulo: rgb(3, 194, 228);
+    --fuente-color-piePag: rgb(242, 242, 242);
+    --fondo-color-piePag: rgb(153, 153, 151);
+    --fondo-colorHover-navBarra: rgb(0, 217, 255);
+    --fondo-color-navBarra: rgb(153, 153, 151);
+    --fondo-color-tabla1: rgb(161, 161, 161);
+    --fondo-color-tabla2: rgb(231, 230, 230);
+    --fondo-color-input: rgb(219, 219, 219);
+    --animate-delay: 0.5s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuentes-generales);
+}
+
+
+/* Lo saque de aca https://programacion.net/articulo/personaliza_tus_barras_de_scroll_con_css_y_webkit_1912 */
+
+body::-webkit-scrollbar {
+    background-color: var(--fondo-color-tabla2);
+    /* color of the scroll thumb */
+    width: .9rem;
+    /* roundness of the scroll thumb */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(3, 194, 228, 0.466);
+}
+
+p {
+    text-align: justify;
+}
+
+
+/* MAIN */
+
+main {
+    margin-top: 8rem;
+    padding-bottom: 1.5rem;
+}
+
+main p {
+    font-size: 1.2rem;
+    margin: 1rem auto 1rem auto;
+    padding: 0 .5rem 0 .5rem;
+}
+
+.imagenesPrincipales {
+    margin: .5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagenesPrincipales img {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+}
+
+
+/* TITULOS */
+
+h1,
+h2 {
+    color: var(--fuente-color-titulo);
+    font-family: var(--fuentes-generales);
+    margin: 1rem auto 1rem auto;
+    padding: 0 .5rem 0 .5rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+
+/* menu */
+
+.header__menu {
+    background: var(--fondo-color-navBarra);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    z-index: 9999;
+    box-shadow: 0px -4px 27px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px -4px 27px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px -4px 27px 0px rgba(0, 0, 0, 0.75);
+}
+
+#bg-dark {
+    background: var(--fondo-color-navBarra) !important;
+    /*por lo que investigue necesito ver SASS para evitar este important*/
+}
+
+.flex__container {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.menu__container ul {
+    list-style: none;
+}
+
+#bg-dark ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#bg-dark a:hover {
+    background-color: var(--fondo-colorHover-navBarra);
+    color: rgb(242, 242, 242);
+}
+
+
+/* footer */
+
+.pieDePagina {
+    background-color: var(--fondo-color-piePag);
+    color: var(--fuente-color-piePag);
+    padding: 1rem;
+}
+
+#copy {
+    text-align: end;
+    font-size: .8rem;
+}
+
+#footer__redes__sociales__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#footer__redes__sociales__container a {
+    text-decoration: none;
+    margin: 1rem;
+    color: var(--fuente-color-piePag);
+}
+
+
+/* Seccion Multimedia */
+
+.videoRulos {
+    padding: 1rem .5rem 1rem .5rem;
+}
+
+.musicaPunk {
+    padding: 1rem .5rem 1rem .5rem;
+}
+
+
+/*pagina de contacto*/
+
+.form__container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.input__outer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.input__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.check_outer__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.check__inner__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.check__inner__container .check {
+    margin: 2rem;
+}
+
+input {
+    display: block;
+    border-radius: 2px;
+}
+
+input:not([type='checkbox']):not([type='submit']),
+select,
+textarea {
+    background: var(--fondo-color-input);
+    padding: 1rem;
+    border: none;
+    width: 100%;
+}
+
+select {
+    display: block;
+}
+
+label {
+    margin-top: 2rem;
+    display: block;
+}
+
+.form__container .botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botones input {
+    font-family: var(--fuente-botones);
+    margin: auto;
+    padding: 1rem;
+    border: none;
+    background: var(--fuente-color-titulo);
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+}
+
+.botones input:hover {
+    font-family: var(--fuente-botones);
+    filter: brightness(185%);
+    color: #f2f2f2;
+    transition: background-color .5s ease;
+}
+
+
+/*Infor Curly*/
+
+.info__container {
+    height: 75vh;
+}
+
+
+/*Pagina Producto*/
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(.1);
+    }
+    85% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card {
+    background: rgba( 228, 228, 228, 0.35);
+    box-shadow: 0 8px 16px 0 rgba(27, 27, 27, 0.2);
+    backdrop-filter: blur( 5px);
+    -webkit-backdrop-filter: blur( 5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: FadeIn 1s ease;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.253);
+}
+
+.container:_card {
+    padding: .2rem 1rem;
+}
+
+.container:_card input {
+    font-family: var(--fuente-botones);
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    border: none;
+    background: var(--fuente-color-titulo);
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    border-radius: 2px;
+}
+
+.container:_card input:hover {
+    font-family: var(--fuente-botones);
+    filter: brightness(110%);
+    color: #f2f2f2;
+    transition: background-color .5s ease;
+}
+
+.productos__container {
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+}
+
+
+/* BREAKPOINS */
+
+@media only screen and (min-width: 200px) {
+    /* PRODUCTOS */
+    .productos__container {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 320px) {
+    /* PRODUCTOS */
+    .productos__container {
+        margin: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    /* PRODUCTOS */
+    .productos__container {
+        margin: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* PRODUCTOS */
+    .productos__container {
+        margin: 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* PRODUCTOS */
+    .productos__container {
+        margin: 5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+}
