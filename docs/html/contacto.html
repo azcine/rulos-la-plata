@@ -23,7 +23,7 @@
             <div class="container">
                 <div class="flex__container">
                     <div>
-                        <a class="navbar-brand" href="../index.html">Rulos La Plata</a>
+                        <a class="navbar-brand " href="../index.html">Rulos La Plata</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ToggleNadvar" aria-controls="ToggleNadvar" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -64,48 +64,55 @@
 
         <div class="container">
             <h1>CONTACTO</h1>
-            <div class=" row animate__animated animate__fadeIn animate__delay-1s">
+            <div class=" row animate_animated animatefadeIn animate_delay-1s">
                 <div class="col">
                     <form action="">
                         <div class="form__container">
-                            <div class="input__outer__container">
+                            <div class="input_outer_container">
                                 <div class="input__container">
                                     <!-- nos falta agregar la porosidad -->
                                     <label for="nombre">NOMBRE</label>
 
-                                    <input type="text" name="nombre" id="nombre" placeholder="escribí tu nombre" required>
+                                    <input type="text" name="nombre" id="nombre" placeholder="Escribí tu nombre" required>
 
 
                                     <label for="apellido">APELLIDO</label>
 
-                                    <input type="text" name="apellido" id="apellido" placeholder="escribí tu apellido" required>
+                                    <input type="text" name="apellido" id="apellido" placeholder="Escribí tu apellido" required>
 
 
                                     <label for="telefono">TELEFONO</label>
 
-                                    <input type="tel" name="telefono" id="telefono" placeholder="escribí tu telefono" required>
+                                    <input type="tel" name="telefono" id="telefono" placeholder="Escribí tu telefono" required>
 
 
                                     <label for="mail">MAIL</label>
 
-                                    <input type="email" name="mail" id="mail" placeholder="escribí tu mail" required>
+                                    <input type="email" name="mail" id="mail" placeholder="Escribí tu mail" required>
 
 
                                     <label for="select">De que localidad sos?</label>
                                     <select name="select" id="select">
-                                <option value="laplata">La Plata</option>
-                                <option value="caba">CABA</option>
-                                <option value="tolosa" selected>Tolosa</option>
+                                        <option value="caba">CABA</option>
+                                        <option value="granBuenosAires">Gran Buenos Aires</option>
+                                        <option value="laplata" selected>La Plata</option>
+                                        <option value="citiBell">City Bell</option>
+                                        <option value="gonet">Gonnet</option>
+                                        <option value="losHornos">Los Hornos</option>
+                                        <option value="ringuelet">Ringuelet</option>
+                                        <option value="sanCarlos">San Carlos</option>
+                                        <option value="tolosa">Tolosa</option>
+                                        <option value="villaElisa">Villa Elisa</option>
+                                        <option value="otrasProvincia">Otras Provincias</option>
                             </select>
-
-
                                     <label for="mensaje">MENSAJE</label>
                                     <textarea name="mensaje" id="mensaje" placeholder="Escribí tu mensaje" rows="10"></textarea>
 
-                                    <div class="check__outer__container">
-                                        <label for="check">¿Querés recibir mas info de Rulos La Plata?</label>
-                                        <div class="check__inner__container">
-                                            SI <input type="checkbox" name="check" id="check">
+                                    <div class="check_outer_container">
+
+                                        <div class="check_inner_container">
+
+                                            <input type="checkbox" name="check" id="check">Click para recibir más info de Rulos La Plata
                                         </div>
 
                                         <div class="form__container--botones">
@@ -122,28 +129,26 @@
         </div>
     </main>
 
-    <footer class="pieDePagina">
-        <h3>Pie de página</h3>
-        <section>
-            <article>
-                <p>
-                    Formulario de contacto y redes sociales
-                </p>
-            </article>
-        </section>
-
-        <div id="footer__redes__sociales__container">
-            <a href=""><small> FACEBOOK </small> </a>
-            <a href=""><small> INSTAGRAM </small></a>
-            <a href=""><small> WHATSAPP </small></a>
+    <footer class="pieDePagina container-fluid">
+        <div class="row">
+            <h4 class="text-center">NUESTRAS REDES</h4>
+            <div id="footer__redes__sociales__container">
+                <a href="https://www.facebook.com/rulo.La.Plata/"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/rulos_la_plata/?hl=es"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/541133332703/?text=Hola,%20Me%20contacto%20desde%20la%20pagina%20WEB...%20"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://ruloslaplata.mercadoshops.com.ar/"><i class="fas fa-shopping-cart"></i></a>
+            </div>
         </div>
-
-        <p id="copy"> &copy; <strong>Andrea Zucchi 2021</strong></p>
+        <div class="row">
+            <div class="col">
+                <p id="copy"> &copy; <strong>Andrea Zucchi 2021</strong></p>
+            </div>
+        </div>
     </footer>
 
     <!-- Script de JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/bc1ac38bc4.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
