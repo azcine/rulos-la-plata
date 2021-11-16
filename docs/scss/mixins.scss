@@ -1,0 +1,18 @@
+@mixin flex__row__basic {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@mixin flex__column__basic {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin gridResponsive($margin, $columnFr, $columnRep, $columnGap, $rowGap) {
+    margin: $margin;
+    display: grid;
+    grid-template-columns: repeat($columnRep, $columnFr);
+    grid-column-gap: $columnGap;
+    grid-row-gap: $rowGap;
+}

@@ -1,0 +1,59 @@
+@import 'mixins';
+@import 'variables';
+
+/*Pagina Producto*/
+
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(.1);
+    }
+    85% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card {
+    background: rgba( 228, 228, 228, 0.35);
+    box-shadow: 0 8px 16px 0 rgba(27, 27, 27, 0.2);
+    backdrop-filter: blur( 5px);
+    -webkit-backdrop-filter: blur( 5px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    transition: 0.3s;
+    @include flex__column__basic;
+    justify-content: center;
+    animation: FadeIn 1s ease;
+    &:hover {
+        box-shadow: 5px 16px 16px 0 rgba(0, 0, 0, 0.253);
+    }
+}
+
+.container__card {
+    padding: .2rem 1rem;
+    input {
+        font-family: $fuente-botones;
+        margin: 1rem auto;
+        padding: 1rem 2rem;
+        border: none;
+        background: $fuente-color-titulo;
+        color: #f2f2f2;
+        text-transform: uppercase;
+        letter-spacing: .09em;
+        border-radius: 2px;
+        &:hover {
+            font-family: $fuente-botones;
+            filter: brightness(110%);
+            color: #f2f2f2;
+            transition: background-color .5s ease;
+        }
+    }
+}
+
+.productos__container {
+    @include gridResponsive(5rem, 1fr, 4, 1rem, 1rem);
+}

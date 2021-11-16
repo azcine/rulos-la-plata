@@ -1,0 +1,128 @@
+/*pagina de contacto*/
+.form__container {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.input__outer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.check_outer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.check__inner__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.check__inner__container .check {
+  margin: 2rem;
+}
+
+input {
+  display: block;
+  border-radius: 2px;
+}
+
+input:not([type='checkbox']):not([type='submit']),
+select,
+textarea {
+  background: #dbdbdb;
+  padding: 1rem;
+  border: none;
+  width: 100%;
+}
+
+select {
+  display: block;
+}
+
+label {
+  margin-top: 2rem;
+  display: block;
+}
+
+.form__container .form__container--botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form__container--botones input {
+  font-family: "Ubuntu", sans-serif;
+  margin: auto;
+  padding: 1rem;
+  border: none;
+  background: #03c2e4;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  border-radius: 2px;
+}
+
+.form__container--botones input:hover {
+  font-family: "Ubuntu", sans-serif;
+  -webkit-filter: brightness(185%);
+          filter: brightness(185%);
+  color: #f2f2f2;
+  -webkit-transition: background-color .5s ease;
+  transition: background-color .5s ease;
+}
+/*# sourceMappingURL=contacto.css.map */

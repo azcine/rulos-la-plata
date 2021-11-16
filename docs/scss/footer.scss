@@ -1,0 +1,36 @@
+@import 'variables';
+@import 'mixins';
+
+/* footer */
+
+.pieDePagina {
+    background-color: $fondo-color-piePag;
+    color: $fuente-color-piePag;
+    padding: 1rem;
+}
+
+#copy {
+    text-align: end;
+    font-size: .8rem;
+}
+
+#footer__redes__sociales__container {
+    @include flex__row__basic;
+    a {
+        text-decoration: none;
+        margin: 1rem;
+        color: $fuente-color-piePag;
+    }
+}
+
+.fab,
+.fas {
+    font-size: 2rem;
+    margin: .5rem 1rem .5rem 1rem;
+    &:hover {
+        color: $fondo-colorHover-navBarra;
+    }
+    p a {
+        text-decoration: none;
+    }
+}

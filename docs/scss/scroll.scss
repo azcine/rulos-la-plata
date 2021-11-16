@@ -1,0 +1,12 @@
+/* Lo saque de aca https: //programacion.net/articulo/personaliza_tus_barras_de_scroll_con_css_y_webkit_1912 */
+
+body::-webkit-scrollbar {
+    background-color: $fondo-color-tabla2;
+    /* color of the scroll thumb */
+    width: .9rem;
+    /* roundness of the scroll thumb */
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(3, 194, 228, 0.466);
+}

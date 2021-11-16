@@ -1,0 +1,17 @@
+/* TITULOS */
+
+h1,
+h2 {
+    color: $fuente-color-titulo;
+    font-family: $fuentes-generales;
+    margin: 1rem auto 1rem auto;
+    padding: 0 .5rem 0 .5rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
