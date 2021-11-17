@@ -279,6 +279,7 @@ label {
 }
 
 .form__container .form__container--botones {
+    margin: 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -506,9 +507,10 @@ label {
 
 /*Infor Curly*/
 
-.info__container {
+
+/* .info__container {
     height: 75vh;
-}
+} */
 
 
 /*# sourceMappingURL=stiloScss.css.map */

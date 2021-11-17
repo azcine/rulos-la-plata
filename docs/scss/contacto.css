@@ -105,6 +105,10 @@ label {
           justify-content: center;
 }
 
+.form__container--botones {
+  margin: 2rem;
+}
+
 .form__container--botones input {
   font-family: "Ubuntu", sans-serif;
   margin: auto;
